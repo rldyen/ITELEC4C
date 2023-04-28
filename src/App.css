@@ -1,0 +1,115 @@
+.main {
+  background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.3)), url("https://wallpapercave.com/wp/wp9204454.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.App {
+	display: grid;
+  gap: 1rem;
+	place-items: center;
+  text-align: center;
+}
+
+.title {
+  margin: 4rem;
+  text-align: center;
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+
+.product {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+	padding: 4px;
+	background: white;
+  /* border-width: thin;
+  border-style: solid;
+  border-color: gray; */
+  border-radius: 15px;
+  
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+	transition: all 0.2s ease;
+	text-decoration: none;
+	color: black;
+	position: relative;
+}
+
+.product:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out
+}
+
+.productImage {
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+  border-radius: 10px;
+}
+
+.btnCart {
+  background: #4681f4;
+  mix-blend-mode: normal;
+  color: white; 
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+
+.btnCart:hover {
+  background: #5c22dd;
+  color: white;
+  transition: all 0.2s ease-in-out
+
+}
+
+.btnFave {
+  background-color: #dd7973;
+  color: white; 
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+
+.btnFave:hover {
+  background: #c13ea8;
+  color: white;
+  transition: all 0.2s ease-in-out
+}
+
+.btnCart:active, .btnCart:focus, .btnFave:active, .btnFave:focus{
+  outline: none;
+}
+
+@media screen and (min-width: 800px) {
+	.App {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
