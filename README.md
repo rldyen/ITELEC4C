@@ -1,2 +1,2 @@
 # ITELEC4C
-ITELEC4C activities
+This repository contains all the source code for the activites performed for our course ITELEC4C (ReactJS).
